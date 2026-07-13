@@ -422,20 +422,21 @@
   }
 
   /* ============ LAPTOP DASHBOARD (real UI, from screenshots) ============ */
-  .laptop{width:640px;background:#E7E5EE;border-radius:14px 14px 0 0;box-shadow:0 16px 40px -12px rgba(11,18,32,.22);}
-  .laptop-hinge{height:16px;background:linear-gradient(180deg,#D8D5E3,#C7C3D3);border-radius:0 0 10px 10px;position:relative;}
-  .laptop-hinge::after{content:"";position:absolute;left:50%;top:0;transform:translateX(-50%);width:70px;height:6px;background:#B7B2C4;border-radius:0 0 6px 6px;}
-  .laptop-screen-wrap{padding:14px 14px 0;}
-  .dash-window{background:var(--dash-card);border-radius:10px 10px 0 0;overflow:hidden;border:1px solid #DDD9E8;border-bottom:none;}
-  .dash-chrome{background:#EDEBF3;padding:9px 14px;display:flex;align-items:center;gap:14px;border-bottom:1px solid #DDD9E8;}
-  .dash-chrome .dots{display:flex;gap:6px;flex-shrink:0;}
-  .dash-chrome .dots span{width:9px;height:9px;border-radius:50%;background:#D3CFDF;}
-  .dash-chrome .nav-icons{display:flex;gap:8px;color:var(--dash-muted-2);flex-shrink:0;}
-  .dash-chrome .nav-icons svg{width:12px;height:12px;}
-  .dash-chrome .url-bar{flex:1;display:flex;align-items:center;gap:6px;background:#fff;border:1px solid #DDD9E8;border-radius:7px;padding:5px 10px;font-family:var(--font-mono);font-size:10.5px;color:var(--dash-muted);}
-  .dash-chrome .url-bar svg{width:10px;height:10px;color:var(--dash-muted-2);flex-shrink:0;}
+  .laptop{width:760px;position:relative;background:linear-gradient(145deg,#252932,#06070A 45%,#15171D);border:1px solid rgba(255,255,255,.24);border-radius:30px 30px 10px 10px;padding:30px 18px 0;box-shadow:0 34px 80px -22px rgba(0,0,0,.48);}
+  .laptop::before{content:"";position:absolute;top:13px;left:50%;width:7px;height:7px;transform:translateX(-50%);border-radius:50%;background:#050607;box-shadow:inset 0 0 0 1px rgba(255,255,255,.16),0 0 0 2px rgba(255,255,255,.035);}
+  .laptop::after{content:"";position:absolute;left:50%;bottom:-33px;width:112%;height:30px;transform:translateX(-50%);border-radius:0 0 42px 42px;background:linear-gradient(180deg,#8B909A 0%,#4D525B 34%,#252A32 58%,#0E1015 100%);box-shadow:0 18px 24px -14px rgba(0,0,0,.55);}
+  .laptop-screen-wrap{padding:0;background:#000;border-radius:6px 6px 0 0;overflow:hidden;}
+  .laptop-base{position:relative;z-index:2;height:30px;margin:0 -18px;border-radius:0 0 10px 10px;background:linear-gradient(180deg,#16191F 0%,#080A0E 72%,#020305 100%);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.62);font-size:13px;font-weight:500;letter-spacing:-.02em;}
+  .laptop-base::before{content:"";position:absolute;left:50%;bottom:-5px;width:120px;height:5px;transform:translateX(-50%);border-radius:0 0 10px 10px;background:linear-gradient(90deg,#3A3E47,#8E939C,#353A42);}
+  .dash-window{background:var(--dash-card);border-radius:0;overflow:hidden;border:0;}
+  .dash-chrome{height:46px;background:#292929;padding:0 16px;display:flex;align-items:center;gap:26px;border-bottom:0;color:#E8E8E8;}
+  .dash-chrome .dots{display:none;}
+  .dash-chrome .nav-icons{display:flex;gap:58px;color:#D9D9D9;flex-shrink:0;}
+  .dash-chrome .nav-icons svg{width:16px;height:16px;stroke-width:2.3;}
+  .dash-chrome .url-bar{max-width:260px;margin:0 auto;flex:1;display:flex;align-items:center;justify-content:center;gap:7px;background:#585858;border:0;border-radius:7px;padding:6px 12px;font-family:var(--font-body);font-size:12px;font-weight:600;color:#F3F3F3;box-shadow:inset 0 1px 0 rgba(255,255,255,.08);}
+  .dash-chrome .url-bar svg{width:12px;height:12px;color:#F3F3F3;flex-shrink:0;}
 
-  .dash-body{display:flex;height:344px;overflow:hidden;font-family:var(--font-body);}
+  .dash-body{display:flex;height:430px;overflow:hidden;font-family:var(--font-body);background:#fff;}
   .dash-sidebar{width:150px;flex-shrink:0;background:var(--dash-sidebar);border-right:1px solid var(--dash-line);padding:14px 10px;display:flex;flex-direction:column;}
   .dash-logo{display:flex;align-items:center;gap:6px;padding:0 4px 14px;font-family:var(--font-body);font-weight:700;font-size:11.5px;color:var(--dash-ink);}
   .dash-logo img{width:16px;height:16px;border-radius:4px;flex-shrink:0;}
@@ -582,10 +583,12 @@
   .device-stage-slot{position:relative;width:100%;}
   .device-stage{position:relative;width:100%;max-width:980px;height:620px;}
   .device-slot{position:absolute;top:50%;left:50%;transition:transform 1s cubic-bezier(.22,1,.36,1), opacity 1s ease;cursor:pointer;will-change:transform;}
+  .device-slot[data-role="left"]::before,
+  .device-slot[data-role="right"]::before{content:"";position:absolute;inset:-70px;border-radius:48px;background:rgba(255,255,255,.001);pointer-events:auto;}
 
   .device-slot[data-role="front"]{transform:translate(-50%,-50%) scale(1);opacity:1;z-index:3;cursor:default;pointer-events:auto;}
-  .device-slot[data-role="left"]{transform:translate(-50%,-50%) translate(calc(-1 * var(--side-offset, 410px)),50px) scale(.4) rotate(-4deg);opacity:.7;z-index:1;}
-  .device-slot[data-role="right"]{transform:translate(-50%,-50%) translate(var(--side-offset, 410px),50px) scale(.4) rotate(4deg);opacity:.7;z-index:1;}
+  .device-slot[data-role="left"]{left:calc(50% - var(--left-offset, 410px));transform:translate(-50%,-50%) translateY(50px) scale(.4) rotate(-4deg);opacity:.7;z-index:1;}
+  .device-slot[data-role="right"]{left:calc(50% + var(--right-offset, 410px));transform:translate(-50%,-50%) translateY(50px) scale(.4) rotate(4deg);opacity:.7;z-index:1;}
   .device-slot[data-role="left"] .device-inner,
   .device-slot[data-role="right"] .device-inner{pointer-events:none;}
   .device-slot:hover[data-role="left"],
@@ -668,34 +671,61 @@
 
   @media (max-width:1080px){
     .laptop{width:560px;}
-    .device-slot[data-role="left"]{transform:translate(-50%,-50%) translate(calc(-1 * var(--side-offset, 390px)),50px) scale(.48) rotate(-4deg);}
-    .device-slot[data-role="right"]{transform:translate(-50%,-50%) translate(var(--side-offset, 390px),50px) scale(.48) rotate(4deg);}
+    .device-slot[data-role="left"]{left:calc(50% - var(--left-offset, 390px));transform:translate(-50%,-50%) translateY(50px) scale(.48) rotate(-4deg);}
+    .device-slot[data-role="right"]{left:calc(50% + var(--right-offset, 390px));transform:translate(-50%,-50%) translateY(50px) scale(.48) rotate(4deg);}
   }
   @media (max-width:900px){
     .device-stage{height:600px;}
     .laptop{width:460px;}
     .tablet-shell{width:320px;}
-    .device-slot[data-role="left"]{transform:translate(-50%,-50%) translate(calc(-1 * var(--side-offset, 320px)),40px) scale(.48) rotate(-4deg);}
-    .device-slot[data-role="right"]{transform:translate(-50%,-50%) translate(var(--side-offset, 320px),40px) scale(.48) rotate(4deg);}
+    .device-slot[data-role="left"]{left:calc(50% - var(--left-offset, 320px));transform:translate(-50%,-50%) translateY(40px) scale(.48) rotate(-4deg);}
+    .device-slot[data-role="right"]{left:calc(50% + var(--right-offset, 320px));transform:translate(-50%,-50%) translateY(40px) scale(.48) rotate(4deg);}
   }
   @media (max-width:640px){
-    .device-stage-slot{height:560px;overflow:visible;}
-    .device-stage{position:relative;width:100%;height:560px;display:block;}
+    .device-stage-slot{height:590px;overflow:visible;}
+    .device-stage{position:relative;width:100%;height:590px;display:block;}
     .device-slot{position:absolute !important;top:50%;left:50%;opacity:1 !important;transition:transform .45s ease, opacity .35s ease;margin:0;display:flex;justify-content:center;}
-    .device-slot[data-role="front"]{transform:translate(-50%,-50%) scale(1) !important;z-index:3;}
-    .device-slot[data-role="left"]{display:flex;transform:translate(-50%,-50%) translate(-136px,42px) scale(.42) rotate(-5deg) !important;z-index:4;}
-    .device-slot[data-role="right"]{display:flex;transform:translate(-50%,-50%) translate(136px,42px) scale(.42) rotate(5deg) !important;z-index:4;}
-    .device-slot .device-inner{pointer-events:auto !important;}
+    .device-slot[data-role="left"]::before,
+    .device-slot[data-role="right"]::before{inset:-92px;}
+    .device-slot[data-role="front"]{transform:translate(-50%,-50%) scale(1) !important;z-index:5;}
+    .device-slot[data-role="left"]{left:calc(50% - var(--left-offset, 225px));display:flex;transform:translate(-50%,-50%) translateY(76px) scale(.22) rotate(-6deg) !important;z-index:2;opacity:.48 !important;}
+    .device-slot[data-role="right"]{left:calc(50% + var(--right-offset, 225px));display:flex;transform:translate(-50%,-50%) translateY(76px) scale(.22) rotate(6deg) !important;z-index:2;opacity:.48 !important;}
+    .device-slot[data-role="left"] .device-inner,
+    .device-slot[data-role="right"] .device-inner{pointer-events:none !important;}
+    .device-slot[data-role="front"] .device-inner{pointer-events:auto !important;}
     .device-badge{display:none;}
-    .device-ring,.device-tap-hint,.cursor-demo{display:none !important;}
+    .device-tap-hint,.cursor-demo{display:none !important;}
+    .device-slot[data-role="front"] .device-ring{display:block;position:absolute;inset:-14px;border-radius:34px;border:2px solid var(--brand);opacity:0;pointer-events:none;animation:invitePulse 2.8s ease-in-out infinite;}
     .device-slot[data-device="laptop"] .device-inner{transform:none;margin-bottom:0;}
+    .device-slot[data-device="laptop"][data-role="front"] .device-inner{transform:scale(.42);transform-origin:center center;}
+    .device-stage[data-front="laptop"] .device-slot[data-device="tablet"]{left:16% !important;top:51% !important;transform:translate(-50%,-50%) scale(.22) rotate(-8deg) !important;z-index:4;opacity:.62 !important;}
+    .device-stage[data-front="laptop"] .device-slot[data-device="phone"]{left:84% !important;top:51% !important;transform:translate(-50%,-50%) scale(.22) rotate(8deg) !important;z-index:4;opacity:.62 !important;}
+    .device-stage[data-front="laptop"] .device-slot[data-device="tablet"]:hover{left:10% !important;top:48% !important;transform:translate(-50%,-50%) scale(.27) rotate(-10deg) !important;z-index:6;opacity:.96 !important;}
+    .device-stage[data-front="laptop"] .device-slot[data-device="phone"]:hover{left:90% !important;top:48% !important;transform:translate(-50%,-50%) scale(.27) rotate(10deg) !important;z-index:6;opacity:.96 !important;}
+    .device-stage[data-front="laptop"] .device-slot[data-device="tablet"] .device-inner{animation:laptopOrbitLeft 3.6s ease-in-out infinite;}
+    .device-stage[data-front="laptop"] .device-slot[data-device="phone"] .device-inner{animation:laptopOrbitRight 3.6s ease-in-out infinite;}
+    .device-stage[data-front="laptop"] .device-slot[data-device="phone"]:hover .device-inner,
+    .device-stage[data-front="laptop"] .device-slot[data-device="tablet"]:hover .device-inner{animation-duration:1.8s;}
+    .laptop{width:720px;}
     .device-slot[data-device="tablet"] .device-inner{transform:none;margin-bottom:0;}
   }
+  @keyframes laptopOrbitLeft{
+    0%,100%{transform:translate(0,0) rotate(-1deg);}
+    50%{transform:translate(8px,-10px) rotate(2deg);}
+  }
+  @keyframes laptopOrbitRight{
+    0%,100%{transform:translate(0,0) rotate(1deg);}
+    50%{transform:translate(-8px,-10px) rotate(-2deg);}
+  }
   @media (max-width:380px){
-    .device-stage-slot{height:520px;}
-    .device-stage{height:520px;}
-    .device-slot[data-role="left"]{transform:translate(-50%,-50%) translate(-118px,34px) scale(.38) rotate(-5deg) !important;}
-    .device-slot[data-role="right"]{transform:translate(-50%,-50%) translate(118px,34px) scale(.38) rotate(5deg) !important;}
+    .device-stage-slot{height:560px;}
+    .device-stage{height:560px;}
+    .device-slot[data-role="left"]{left:calc(50% - var(--left-offset, 194px));transform:translate(-50%,-50%) translateY(72px) scale(.2) rotate(-6deg) !important;}
+    .device-slot[data-role="right"]{left:calc(50% + var(--right-offset, 194px));transform:translate(-50%,-50%) translateY(72px) scale(.2) rotate(6deg) !important;}
+    .device-stage[data-front="laptop"] .device-slot[data-device="tablet"]{left:15% !important;top:51% !important;transform:translate(-50%,-50%) scale(.2) rotate(-8deg) !important;}
+    .device-stage[data-front="laptop"] .device-slot[data-device="phone"]{left:85% !important;top:51% !important;transform:translate(-50%,-50%) scale(.2) rotate(8deg) !important;}
+    .device-stage[data-front="laptop"] .device-slot[data-device="tablet"]:hover{left:9% !important;top:48% !important;transform:translate(-50%,-50%) scale(.24) rotate(-10deg) !important;}
+    .device-stage[data-front="laptop"] .device-slot[data-device="phone"]:hover{left:91% !important;top:48% !important;transform:translate(-50%,-50%) scale(.24) rotate(10deg) !important;}
     .iphone{width:min(236px, calc(100vw - 58px));}
   }
 
@@ -851,6 +881,7 @@
     .mobile-menu a{display:flex;align-items:center;justify-content:space-between;padding:14px 12px;border-radius:12px;color:var(--ink);font-size:14px;font-weight:600;}
     .mobile-menu a:hover{background:var(--paper);}
     .hero{padding:96px 0 42px;}
+    .hero-ecg{top:82px;height:170px;opacity:.42;}
     .hero-copy h1{font-size:clamp(34px,10vw,44px);line-height:1.02;}
     .hero-copy::before{left:-18px;right:-18px;top:-28px;bottom:-22px;border-radius:26px;}
     .blob{display:none;}
@@ -885,7 +916,7 @@
     .device-slot{max-width:100%;}
     .iphone{width:min(250px, calc(100vw - 52px));}
     .tablet-shell{width:min(320px, calc(100vw - 32px));}
-    .laptop{width:min(460px, calc(100vw - 24px));}
+    .laptop{width:720px;}
     .compare-card h3{flex-wrap:wrap;}
     .compare-list li{font-size:13.5px;}
     .course-price-grid{gap:20px;}
@@ -1261,8 +1292,8 @@
                     </div>
                   </div>
                 </div>
+                <div class="laptop-base">MacBook Air</div>
               </div>
-              <div class="laptop-hinge"></div>
               </div>
             </div>
 
@@ -2110,12 +2141,12 @@
                     <span><svg><use href="#i-clock"/></svg>48h</span>
                   </div>
                   <span class="course-cta"><svg><use href="#i-arrow"/></svg>Continue learning</span>
+                    </div>
+                  </div>
                 </div>
               </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
 
       <div class="dd-row rev" data-reveal>
         <div class="dd-copy">
@@ -2653,33 +2684,46 @@
     });
     var order = ['phone','laptop','tablet']; /* order[0] is always front */
     var lastPromoteAt = 0;
-    var COOLDOWN_MS = 1050;
+    var COOLDOWN_MS = 160;
+    var swipeStartX = 0;
+    var swipeStartY = 0;
+    var swipeTracking = false;
 
     /* Native widths per device at each layout tier — used to compute a
        side-offset that's just wide enough to clear whichever device is
        currently front, instead of always reserving room for the widest case. */
     var NATIVE_W = {
-      wide:   {laptop:640, tablet:380, phone:308}, /* >=1180px: 2-col header layout */
+      wide:   {laptop:760, tablet:380, phone:308}, /* >=1180px: 2-col header layout */
       mid:    {laptop:560, tablet:380, phone:308}, /* 900-1179px */
-      narrow: {laptop:460, tablet:320, phone:308}  /* 641-899px */
+      narrow: {laptop:460, tablet:320, phone:308}, /* 641-899px */
+      mobile: {laptop:374, tablet:320, phone:250},
+      tiny:   {laptop:374, tablet:320, phone:236}
     };
-    var SIDE_SCALE = 0.4;
+    var SIDE_SCALE = {wide:.4, mid:.48, narrow:.48, mobile:.22, tiny:.2};
+    var SIDE_GAP = {wide:28, mid:24, narrow:22, mobile:12, tiny:10};
 
     function currentTier(){
       var w = window.innerWidth;
       if(w >= 1180) return 'wide';
       if(w >= 900) return 'mid';
-      return 'narrow';
+      if(w > 640) return 'narrow';
+      if(w <= 380) return 'tiny';
+      return 'mobile';
     }
 
     function updateOffset(){
-      var widths = NATIVE_W[currentTier()];
+      var tier = currentTier();
+      var widths = NATIVE_W[tier];
       var front = order[0];
-      var others = Object.keys(widths).filter(function(d){ return d !== front; });
+      var left = order[1];
+      var right = order[2];
       var frontHalf = widths[front] / 2;
-      var maxSideHalf = Math.max(widths[others[0]], widths[others[1]]) * SIDE_SCALE / 2;
-      var offset = Math.ceil(frontHalf + maxSideHalf + 24);
-      stage.style.setProperty('--side-offset', offset + 'px');
+      var sideScale = SIDE_SCALE[tier];
+      var gap = SIDE_GAP[tier];
+      var leftOffset = Math.ceil(frontHalf + (widths[left] * sideScale / 2) + gap);
+      var rightOffset = Math.ceil(frontHalf + (widths[right] * sideScale / 2) + gap);
+      stage.style.setProperty('--left-offset', leftOffset + 'px');
+      stage.style.setProperty('--right-offset', rightOffset + 'px');
     }
 
     function applyRoles(){
@@ -2687,6 +2731,7 @@
       order.forEach(function(device, i){
         if(slots[device]) slots[device].setAttribute('data-role', roleNames[i]);
       });
+      stage.setAttribute('data-front', order[0]);
       updateOffset();
     }
 
@@ -2713,21 +2758,64 @@
       resetScroll(device);
     }
 
+    function rotateDevices(direction){
+      var now = Date.now();
+      if(now - lastPromoteAt < COOLDOWN_MS) return;
+      lastPromoteAt = now;
+      if(direction === 'next'){
+        order.push(order.shift());
+      }else{
+        order.unshift(order.pop());
+      }
+      applyRoles();
+      resetScroll(order[0]);
+    }
+
     /* Event delegation on the stable (never-transformed) stage container,
        rather than attaching listeners to the individual elements that get
        transformed — this avoids any hit-testing edge cases during animation. */
     stage.addEventListener('mouseover', function(e){
+      if(window.innerWidth <= 640) return;
+      var slotEl = e.target.closest('.device-slot');
+      if(!slotEl || !stage.contains(slotEl)) return;
+      promote(slotEl.getAttribute('data-device'));
+    });
+
+    stage.addEventListener('pointerover', function(e){
+      if(window.innerWidth <= 640) return;
       var slotEl = e.target.closest('.device-slot');
       if(!slotEl || !stage.contains(slotEl)) return;
       promote(slotEl.getAttribute('data-device'));
     });
 
     stage.addEventListener('click', function(e){
+      if(window.innerWidth <= 640 && stage.getAttribute('data-front') === 'laptop'){
+        var stageBox = stage.getBoundingClientRect();
+        var clickX = e.clientX - stageBox.left;
+        if(clickX < stageBox.width * .32){ e.preventDefault(); promote('tablet'); return; }
+        if(clickX > stageBox.width * .68){ e.preventDefault(); promote('phone'); return; }
+      }
       var slotEl = e.target.closest('.device-slot');
       if(!slotEl || !stage.contains(slotEl)) return;
       var device = slotEl.getAttribute('data-device');
       if(slotEl.getAttribute('data-role') !== 'front'){ e.preventDefault(); promote(device); }
     });
+
+    stage.addEventListener('touchstart', function(e){
+      if(!e.touches || e.touches.length !== 1) return;
+      swipeTracking = true;
+      swipeStartX = e.touches[0].clientX;
+      swipeStartY = e.touches[0].clientY;
+    }, {passive:true});
+
+    stage.addEventListener('touchend', function(e){
+      if(!swipeTracking || !e.changedTouches || e.changedTouches.length !== 1) return;
+      swipeTracking = false;
+      var dx = e.changedTouches[0].clientX - swipeStartX;
+      var dy = e.changedTouches[0].clientY - swipeStartY;
+      if(Math.abs(dx) < 42 || Math.abs(dx) < Math.abs(dy) * 1.2) return;
+      rotateDevices(dx < 0 ? 'next' : 'prev');
+    }, {passive:true});
 
     applyRoles();
   }
