@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="16" fill="#ffffff"/>
+  <rect x="8" y="8" width="48" height="48" rx="12" fill="#2D5BFF"/>
+  <path d="M20 44V20h6.8l14.4 15.7V20H48v24h-6.8L26.8 28.4V44H20z" fill="#ffffff"/>
+  <circle cx="47" cy="17" r="5" fill="#ffffff"/>
+  <text x="47" y="19.6" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" font-weight="700" fill="#2D5BFF">R</text>
+</svg>
