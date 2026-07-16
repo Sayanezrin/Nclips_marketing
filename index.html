@@ -3,8 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NCLIPS.AI — NCLEX-RN & NCLEX-PN prep, one chapter at a time</title>
-<meta name="description" content="NCLIPS.AI turns the NCLEX-RN & NCLEX-PN curriculum into short video chapters. Resume where you left off, bookmark what matters, and study on phone, tablet, or the web.">
+<title>NCLIPS.AI NCLEX practice questions, NCLEX RN & NCLEX PN prep</title>
+<meta name="description" content="Study NCLEX practice questions, NCLEX exam sample questions, short NCLEX test prep lessons, and Next Gen NCLEX practice questions with NCLIPS.AI.">
+<meta name="keywords" content="nclex exam practice questions, nclex exam sample questions, nclex practice test questions, nclex test prep questions, nclex test questions, nclex example questions, sample nclex questions, nclex practice quiz, free nclex practice questions, nclex practice questions, nclex exam questions, nclex practice test, nclex questionnaires, nclex questions, next gen nclex practice questions">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W2NMHKKZ');</script>
+<!-- End Google Tag Manager -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
@@ -394,7 +402,7 @@
   .legal-h h4{font-family:var(--font-serif);font-weight:700;font-size:14.5px;color:var(--app-ink);}
   .legal-list{margin:8px 0 14px;display:grid;gap:8px;}
   .legal-list li{display:flex;gap:8px;font-size:11.5px;line-height:1.55;color:var(--app-muted);}
-  .legal-list li::before{content:"—";flex-shrink:0;color:var(--app-muted-2);}
+  .legal-list li::before{content:"•";flex-shrink:0;color:var(--app-muted-2);}
   .legal-link{color:var(--app-primary);font-weight:600;}
 
   /* NOTIFICATIONS toggles */
@@ -733,7 +741,7 @@
   .features{padding:110px 0;background:radial-gradient(ellipse 800px 500px at 0% 10%, rgba(45,91,255,.04), transparent 55%), var(--paper);}
   .features-head{max-width:640px;margin-bottom:52px;}
   .features-head h2{font-size:clamp(26px,3.2vw,38px);margin-top:14px;}
-  .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .feature-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;}
   .feature-card{border:1px solid var(--line);border-radius:var(--radius-lg);padding:30px 26px;background:var(--paper-2);transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;}
   .feature-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md);border-color:var(--line-strong);}
   .feature-icon{width:46px;height:46px;border-radius:12px;background:linear-gradient(155deg,var(--brand),var(--brand-deep));display:flex;align-items:center;justify-content:center;margin-bottom:20px;transition:transform .3s ease;}
@@ -742,6 +750,46 @@
   .feature-tag{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;color:var(--brand-deep);font-weight:600;}
   .feature-card h3{font-size:19px;margin:10px 0 8px;}
   .feature-card p{font-size:14.5px;color:var(--muted);line-height:1.6;}
+  .campaign-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:18px;}
+  .campaign-panel{position:relative;min-height:300px;border-radius:28px;padding:34px 36px;overflow:hidden;border:1px solid var(--line);box-shadow:0 18px 46px rgba(11,18,32,.08);}
+  .campaign-panel h3{font-size:clamp(27px,3.4vw,40px);letter-spacing:-.04em;max-width:12ch;}
+  .campaign-panel p{margin-top:18px;color:var(--muted);font-size:15px;line-height:1.6;max-width:54ch;}
+  .campaign-ai{background:var(--ink);min-height:420px;border-color:rgba(255,255,255,.1);}
+  .campaign-ai h3{color:#fff;}
+  .campaign-ai p{color:rgba(255,255,255,.7);}
+  .campaign-practice{background:var(--paper-2);min-height:420px;}
+  .campaign-practice h3{color:var(--ink);}
+  .campaign-practice p{color:var(--muted);}
+  .campaign-loop{background:var(--paper-2);}
+  .campaign-cta{background:var(--ink);border-color:rgba(255,255,255,.1);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;}
+  .campaign-chat-icon{position:absolute;right:30px;top:28px;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:rgba(45,91,255,.12);color:var(--brand);}
+  .campaign-chat-icon svg{width:20px;height:20px;}
+  .campaign-bubbles{position:absolute;inset:auto 10% 22% 22%;min-height:130px;}
+  .campaign-bubble{position:absolute;border-radius:16px;padding:14px 18px;font-size:13px;font-weight:700;box-shadow:0 12px 28px rgba(11,18,32,.12);}
+  .campaign-bubble.ask{right:18%;top:0;background:var(--brand);color:#fff;}
+  .campaign-bubble.answer{left:0;top:64px;background:#fff;color:#283248;width:min(320px,70%);font-weight:500;line-height:1.45;}
+  .campaign-bubble.answer::before{content:"";display:inline-block;width:10px;height:10px;margin-right:8px;border-radius:3px;background:#8f5bff;vertical-align:-1px;}
+  .campaign-doodles{position:absolute;inset:35% 5% 8%;opacity:.28;background-image:radial-gradient(circle at 8% 40%, transparent 8px, var(--brand-2) 9px, transparent 11px),radial-gradient(circle at 24% 52%, transparent 7px, var(--brand-2) 8px, transparent 10px),radial-gradient(circle at 78% 64%, transparent 8px, var(--brand-2) 9px, transparent 11px),radial-gradient(circle at 92% 34%, transparent 7px, var(--brand-2) 8px, transparent 10px);pointer-events:none;}
+  .practice-stack{position:absolute;left:26px;right:18px;bottom:28px;height:190px;}
+  .practice-card{position:absolute;background:#fff;border-radius:15px;padding:14px 16px;box-shadow:0 12px 24px rgba(118,34,103,.13);font-size:11px;color:#172033;}
+  .practice-card strong{display:block;color:var(--brand);font-family:var(--font-mono);font-size:10px;letter-spacing:.04em;margin-bottom:10px;}
+  .practice-card.question{left:0;top:0;width:64%;transform:rotate(-5deg);}
+  .practice-card.rationale{right:0;top:88px;width:58%;transform:rotate(7deg);}
+  .practice-card.mastery{left:14%;bottom:0;width:45%;}
+  .mastery-bar{height:7px;border-radius:999px;background:#dfe6ff;margin-top:9px;overflow:hidden;}
+  .mastery-bar span{display:block;width:78%;height:100%;background:var(--brand);}
+  .loop-list{display:grid;gap:10px;margin-top:28px;max-width:520px;}
+  .loop-item{display:flex;align-items:center;gap:14px;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:13px 16px;box-shadow:0 8px 18px rgba(11,18,32,.05);}
+  .loop-icon{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;flex:0 0 auto;}
+  .loop-icon svg{width:18px;height:18px;}
+  .loop-icon.good{background:#c8fae0;color:#0b9d72;}
+  .loop-icon.fire{background:#ffe0e5;color:#ed4a50;}
+  .loop-icon.ai{background:#efe4ff;color:#8a4aff;}
+  .loop-icon.bell{background:#ddf3ff;color:#208bd8;}
+  .loop-item b{display:block;font-size:14px;color:var(--ink);}
+  .loop-item span{font-size:12px;color:var(--muted);}
+  .campaign-cta h3{color:#fff;max-width:none;font-size:clamp(30px,3.6vw,42px);}
+  .campaign-cta p{margin-top:8px;color:rgba(255,255,255,.72);}
 
   /* ============ DEEP DIVE ============ */
   .deep-dive{padding:20px 0 110px;background:radial-gradient(ellipse 900px 600px at 100% 30%, rgba(15,184,138,.04), transparent 55%), var(--paper);}
@@ -785,7 +833,8 @@
   .t-stars svg{width:15px;height:15px;color:var(--amber);}
   .t-quote{font-size:14.5px;line-height:1.65;color:var(--ink);}
   .t-person{display:flex;align-items:center;gap:10px;margin-top:auto;}
-  .t-avatar{width:36px;height:36px;border-radius:50%;background:linear-gradient(155deg,var(--brand-2),var(--brand-deep));display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--font-display);font-weight:700;font-size:14px;}
+  .t-avatar{width:42px;height:42px;border-radius:50%;background:linear-gradient(155deg,var(--brand-2),var(--brand-deep));display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--font-display);font-weight:700;font-size:14px;overflow:hidden;flex-shrink:0;}
+  .t-avatar img{width:100%;height:100%;object-fit:cover;}
   .t-person .name{font-size:13.5px;font-weight:600;}
   .t-person .role{font-size:12px;color:var(--muted-2);}
   .t-disclaimer{margin-top:28px;font-size:12px;color:var(--muted-2);}
@@ -854,6 +903,9 @@
     .hero-visual{margin-top:20px;}
     .compare{grid-template-columns:1fr;}
     .feature-grid{grid-template-columns:1fr;}
+    .campaign-grid{grid-template-columns:1fr;}
+    .campaign-panel{min-height:auto;}
+    .campaign-ai,.campaign-practice{min-height:360px;}
     .dd-row{grid-template-columns:1fr;gap:32px;padding:50px 0;}
     .dd-row.rev .dd-copy{order:1;}
     .dd-row.rev .dd-visual{order:2;}
@@ -898,6 +950,14 @@
     .cta-final{padding:72px 0;}
     .problem-head,.features-head,.t-head,.pricing-head,.faq-head{margin-bottom:34px;}
     .compare-card,.feature-card,.how-step,.t-card{padding:24px 20px;border-radius:18px;}
+    .campaign-panel{border-radius:22px;padding:26px 22px;}
+    .campaign-ai,.campaign-practice{min-height:390px;}
+    .campaign-bubbles{left:18px;right:18px;bottom:58px;}
+    .campaign-bubble.ask{right:0;}
+    .campaign-bubble.answer{width:78%;}
+    .practice-card.question{width:72%;}
+    .practice-card.rationale{width:64%;}
+    .practice-card.mastery{width:54%;}
     .course-price-body{padding:24px 20px;}
     .course-price-media{aspect-ratio:16/11;}
     .dd-row{padding:40px 0;gap:24px;}
@@ -942,6 +1002,10 @@
 </style>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W2NMHKKZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <!-- SVG SPRITE -->
 <svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
@@ -1045,17 +1109,19 @@
     </svg>
     <div class="wrap hero-stack">
       <div class="hero-copy" data-reveal>
-        <span class="eyebrow"><span class="dot"></span>NCLEX-RN &amp; NCLEX-PN PREP</span>
+        <span class="eyebrow"><span class="dot"></span>NCLEX RN &amp; NCLEX PN PREP</span>
         <h1>One chapter closer to <em>licensed</em>.</h1>
-        <p class="lede">Short video chapters for the NCLEX-RN &amp; NCLEX-PN — sized for a real study break. Resume where you left off, on your phone, tablet, or laptop.</p>
+        <p class="lede">Short video chapters for the NCLEX RN &amp; NCLEX PN, sized for a real study break. Resume where you left off, on your phone, tablet, or laptop.</p>
         <div class="hero-actions">
-          <a href="https://dashboard.nclips.ai/login" class="btn btn--primary">Start free — no card needed</a>
+          <a href="https://dashboard.nclips.ai/login" class="btn btn--primary">Start free, no card needed</a>
           <button class="btn btn--ghost" type="button" data-open-video="howItWorksVideo">See how it works</button>
         </div>
         <ul class="hero-trust">
-          <li><svg><use href="#i-check"/></svg>145+ Med-Surg chapters</li>
+          <li><svg><use href="#i-check"/></svg>145+ Med Surg chapters</li>
           <li><svg><use href="#i-check"/></svg>Resume right where you left off</li>
-          <li><svg><use href="#i-check"/></svg>NCLEX-RN &amp; NCLEX-PN</li>
+          <li><svg><use href="#i-check"/></svg>NCLEX RN &amp; NCLEX PN</li>
+          <li><svg><use href="#i-check"/></svg>Interact in any language</li>
+          <li><svg><use href="#i-check"/></svg>4K+ Questions</li>
         </ul>
       </div>
 
@@ -1066,7 +1132,7 @@
 
             <!-- ============ LAPTOP (real dashboard.nclips.ai) ============ -->
             <div class="device-slot" data-device="laptop" data-role="left">
-              <span class="device-badge">dashboard.nclips.ai — laptop</span>
+              <span class="device-badge">dashboard.nclips.ai laptop</span>
               <span class="device-ring"></span>
               <span class="device-tap-hint"><svg><use href="#i-play"/></svg></span>
               <span class="cursor-demo"><span class="click-ripple"></span><svg><use href="#i-cursor"/></svg></span>
@@ -1143,7 +1209,7 @@
                               <span class="wm">nclips.ai</span>
                             </div>
                             <div class="dash-resume-body">
-                              <div class="dash-tag-row"><span class="dash-pill">MED-SURG</span><span class="meta">CHAPTER 20 &middot; 56S REMAINING</span></div>
+                              <div class="dash-tag-row"><span class="dash-pill">MED SURG</span><span class="meta">CHAPTER 20 &middot; 56S REMAINING</span></div>
                               <h4>11. Pneumonia [Patient Education]</h4>
                               <div class="dash-resume-actions">
                                 <span class="dash-btn"><svg><use href="#i-play"/></svg>Resume lesson</span>
@@ -1153,15 +1219,15 @@
                           </div>
 
                           <div class="dash-row-head">
-                            <div><h3>My courses</h3><p>Pick up where you left off — every course you own.</p></div>
+                            <div><h3>My courses</h3><p>Pick up where you left off with every course you own.</p></div>
                             <span class="dash-link" data-dash-goto="courses">Browse all <svg><use href="#i-arrow"/></svg></span>
                           </div>
                           <div class="dash-course-grid">
                             <div class="dash-course-card">
                               <div class="dash-course-banner medsurg">
-                                <div class="dash-course-banner-overlay"><div class="t1">MED-SURG</div><div class="t2">FOR NCLEX&reg; SUCCESS</div></div>
+                                <div class="dash-course-banner-overlay"><div class="t1">MED SURG</div><div class="t2">FOR NCLEX&reg; SUCCESS</div></div>
                               </div>
-                              <div class="dash-course-body"><h4>Medical-Surgical Nursing</h4></div>
+                              <div class="dash-course-body"><h4>Medical Surgical Nursing</h4></div>
                             </div>
                             <div class="dash-course-card">
                               <div class="dash-course-banner pharm">
@@ -1175,7 +1241,7 @@
                         <!-- COURSES / LIBRARY -->
                         <div class="dash-screen" data-dash-screen="courses">
                           <div class="dash-h1">Choose your program</div>
-                          <div class="dash-sub">Pick a track to start your NCLEX journey. Each program is a full curriculum, broken into bite-sized chapters.</div>
+                          <div class="dash-sub">Pick a track to start your NCLEX journey. Each program is a full curriculum, broken into quick chapters.</div>
                           <div class="dash-toolbar">
                             <div class="dash-toggle-row">
                               <button class="dash-toggle active" type="button"><svg><use href="#i-bars"/></svg>All courses</button>
@@ -1189,12 +1255,12 @@
                           <div class="dash-course-grid">
                             <div class="dash-course-full">
                               <div class="dash-course-banner medsurg">
-                                <div class="dash-course-banner-overlay"><div class="t1">MED-SURG</div><div class="t2">FOR NCLEX&reg; SUCCESS</div><div class="tag" style="color:rgba(255,255,255,.7)">Think like a Nurse. Care like a Pro.</div></div>
+                                <div class="dash-course-banner-overlay"><div class="t1">MED SURG</div><div class="t2">FOR NCLEX&reg; SUCCESS</div><div class="tag" style="color:rgba(255,255,255,.7)">Think like a Nurse. Care like a Pro.</div></div>
                                 <span class="dash-course-banner-badge" style="background:rgba(255,255,255,.16);color:#fff;"><svg><use href="#i-cap"/></svg>LEARN&middot;APPLY&middot;EXCEL</span>
                               </div>
                               <div class="dash-course-body">
-                                <h4>Medical-Surgical Nursing</h4>
-                                <p>The largest single section on the NCLEX — and the foundation of every clinical rotation.</p>
+                                <h4>Medical Surgical Nursing</h4>
+                                <p>The largest single section on the NCLEX and the foundation of every clinical rotation.</p>
                                 <div class="dash-course-meta"><span><svg><use href="#i-book"/></svg>All body systems</span><span><svg><use href="#i-clock"/></svg>48h</span></div>
                                 <span class="dash-course-cta"><svg><use href="#i-arrow"/></svg>Continue learning</span>
                               </div>
@@ -1207,7 +1273,7 @@
                               </div>
                               <div class="dash-course-body">
                                 <h4>Pharmacology</h4>
-                                <p>Stop memorising drug names — start recognising patterns by class and mechanism.</p>
+                                <p>Stop memorising drug names and start recognising patterns by class and mechanism.</p>
                                 <div class="dash-course-meta"><span><svg><use href="#i-book"/></svg>All drug classes</span><span><svg><use href="#i-clock"/></svg>22h</span></div>
                                 <span class="dash-course-cta"><svg><use href="#i-arrow"/></svg>Continue learning</span>
                               </div>
@@ -1248,11 +1314,11 @@
                         <!-- EXAM -->
                         <div class="dash-screen" data-dash-screen="exam">
                           <div class="dash-h1">Exams</div>
-                          <div class="dash-sub">Practice and simulate NCLEX-style questions.</div>
+                          <div class="dash-sub">Practice and simulate NCLEX style questions.</div>
                           <div class="dash-exam-card">
                             <span class="dash-soon">COMING SOON</span>
                             <h3>The exam engine is on the way.</h3>
-                            <p>We're building this carefully. Keep studying chapters in the meantime — your progress will carry over the moment exams open.</p>
+                            <p>We're building this carefully. Keep studying chapters in the meantime. Your progress will carry over the moment exams open.</p>
                             <span class="dash-btn" data-dash-goto="courses"><svg><use href="#i-arrow"/></svg>Back to chapters</span>
                           </div>
                         </div>
@@ -1270,11 +1336,11 @@
                             <div>
                               <div class="dash-settings-detail dash-detail active" data-detail-pane="billing">
                                 <h4>Billing &amp; subscription</h4>
-                                Medical-Surgical Nursing — <strong style="color:var(--dash-ink);">Annual</strong>, renews Jul 4, 2027. Purchases are handled by Apple or Google, not directly by NCLIPS.
+                                Medical Surgical Nursing, <strong style="color:var(--dash-ink);">Annual</strong>, renews Jul 4, 2027. Purchases are handled by Apple or Google, not directly by NCLIPS.
                               </div>
                               <div class="dash-settings-detail dash-detail" data-detail-pane="notifications">
                                 <h4>Notifications</h4>
-                                Purchases, renewal reminders, and product updates — on. Weekly digest — off. Transactional emails always send.
+                                Purchases, renewal reminders, and product updates are on. Weekly digest is off. Transactional emails always send.
                               </div>
                               <div class="dash-settings-detail dash-detail" data-detail-pane="privacy">
                                 <h4>Privacy &amp; security</h4>
@@ -1282,7 +1348,7 @@
                               </div>
                               <div class="dash-settings-detail dash-detail" data-detail-pane="refund">
                                 <h4>Refund policy</h4>
-                                All purchases are final and non-refundable, processed by Apple or Google. Cancel anytime — you keep access through the period you've paid for.
+                                All purchases are final and non refundable, processed by Apple or Google. Cancel anytime and keep access through the period you've paid for.
                               </div>
                             </div>
                           </div>
@@ -1299,7 +1365,7 @@
 
             <!-- ============ TABLET (real app, tablet-adapted) ============ -->
             <div class="device-slot" data-device="tablet" data-role="right">
-              <span class="device-badge">the app — tablet</span>
+              <span class="device-badge">the app tablet</span>
               <span class="device-ring"></span>
               <span class="device-tap-hint"><svg><use href="#i-play"/></svg></span>
               <span class="cursor-demo"><span class="click-ripple"></span><svg><use href="#i-cursor"/></svg></span>
@@ -1322,8 +1388,8 @@
                   <div class="hero-card-top">
                     <div class="hero-card-greet">Good morning, Saya 👋</div>
                   </div>
-                  <h2>Ready to ace the NCLEX-RN?</h2>
-                  <p>Pick a chapter and start studying — your progress will land here.</p>
+                  <h2>Ready to ace the NCLEX RN?</h2>
+                  <p>Pick a chapter and start studying. Your progress will land here.</p>
                   <span class="hero-card-btn" data-goto="courses"><svg><use href="#i-play"/></svg>Browse chapters</span>
                   <div class="hero-nurses">
                     <svg viewBox="0 0 90 70" fill="none">
@@ -1361,7 +1427,7 @@
               <!-- COURSES -->
               <div class="app-screen" data-screen="courses">
                 <div class="app-h1">Choose your program</div>
-                <div class="app-sub">Pick a track to start your NCLEX journey. Each program is a full curriculum, broken into bite-sized chapters.</div>
+                <div class="app-sub">Pick a track to start your NCLEX journey. Each program is a full curriculum, broken into quick chapters.</div>
                 <div class="search-row">
                   <div class="search-input"><svg><use href="#i-search"/></svg>Search programs</div>
                   <div class="filter-pill">All programs<svg><use href="#i-chevron"/></svg></div>
@@ -1373,18 +1439,18 @@
 
                 <div class="course-card">
                   <div class="course-banner medsurg">
-                    <div class="course-banner-title">MED-SURG<span>FOR NCLEX® SUCCESS</span></div>
+                    <div class="course-banner-title">MED SURG<span>FOR NCLEX® SUCCESS</span></div>
                     <div class="course-banner-tag">Think like a Nurse. Care like a Pro.</div>
                     <div class="course-banner-feats">
-                      <div class="course-feat"><svg><use href="#i-book"/></svg>HIGH-YIELD CONTENT</div>
+                      <div class="course-feat"><svg><use href="#i-book"/></svg>HIGH YIELD CONTENT</div>
                       <div class="course-feat"><svg><use href="#i-target"/></svg>NCLEX FOCUSED</div>
                       <div class="course-feat"><svg><use href="#i-heart"/></svg>PATIENT CARE CENTERED</div>
                     </div>
                     <div class="course-banner-badge"><svg><use href="#i-cap"/></svg>LEARN · APPLY · EXCEL</div>
                   </div>
                   <div class="course-body">
-                    <h3>Medical-Surgical Nursing</h3>
-                    <p>The core body-systems curriculum — cardio, respiratory, neuro, endocrine, renal, pharmacology.</p>
+                    <h3>Medical Surgical Nursing</h3>
+                    <p>The core body systems curriculum: cardio, respiratory, neuro, endocrine, renal, pharmacology.</p>
                     <div class="course-meta-row">
                       <span><svg><use href="#i-book"/></svg>145 chapters</span>
                       <span><svg><use href="#i-clock"/></svg>48h</span>
@@ -1410,7 +1476,7 @@
                   </div>
                   <div class="course-body">
                     <h3>Pharmacology</h3>
-                    <p>Drug classes, mechanisms, side effects, interactions, and high-yield NCLEX pharm questions.</p>
+                    <p>Drug classes, mechanisms, side effects, interactions, and high yield NCLEX pharm questions.</p>
                     <div class="course-meta-row">
                       <span><svg><use href="#i-clock"/></svg>22h</span>
                     </div>
@@ -1426,11 +1492,11 @@
               <!-- EXAM -->
               <div class="app-screen" data-screen="exam">
                 <div class="app-h1">Exams</div>
-                <div class="app-sub">Practice and simulate NCLEX-style questions.</div>
+                <div class="app-sub">Practice and simulate NCLEX style questions.</div>
                 <div class="exam-card">
                   <span class="soon-badge">COMING SOON</span>
                   <h3>The exam engine is on the way.</h3>
-                  <p>We're building this carefully. Keep studying chapters in the meantime — your progress will carry over the moment exams open.</p>
+                  <p>We're building this carefully. Keep studying chapters in the meantime. Your progress will carry over the moment exams open.</p>
                   <span class="course-cta" data-goto="courses" style="display:inline-flex;width:auto;"><svg><use href="#i-arrow"/></svg>Back to chapters</span>
                 </div>
               </div>
@@ -1505,12 +1571,12 @@
                   <div class="app-topbar-title">Billing &amp; subscription</div>
                 </div>
                 <span class="app-eyebrow">CURRENT PLAN</span>
-                <div class="app-h1" style="margin-top:6px;font-size:19px;">Medical-Surgical Nursing</div>
+                <div class="app-h1" style="margin-top:6px;font-size:19px;">Medical Surgical Nursing</div>
                 <div class="course-footer" style="border:1px solid var(--app-line);border-radius:14px;padding:14px;margin-top:12px;background:var(--app-card);">
                   <span class="annual-badge">ANNUAL</span>
                   <span class="renews">Renews <strong>4 Jul 2027</strong></span>
                 </div>
-                <p class="legal-p" style="margin-top:16px;">Manage or cancel from your device's subscription settings — purchases are handled by Apple or Google, not directly by NCLIPS.</p>
+                <p class="legal-p" style="margin-top:16px;">Manage or cancel from your device's subscription settings. Purchases are handled by Apple or Google, not directly by NCLIPS.</p>
                 <div class="settings-row" data-goto="settings-refund" data-push style="margin-top:6px;">
                   <div class="settings-icon"><svg><use href="#i-card"/></svg></div>
                   <div><div class="settings-row-title">Refund policy</div><div class="settings-row-sub">How refunds and cancellations work</div></div>
@@ -1550,11 +1616,11 @@
                 <div style="margin-top:14px;">
                   <div class="list-row"><div class="thumb"><svg><use href="#i-play"/></svg></div><div style="min-width:0;"><div class="list-cat">Asthma</div><div class="list-title">6. Status Asthmaticus [...</div><div class="list-status">0% watched · 1h ago</div></div><div class="list-chev"><svg><use href="#i-chevron-right"/></svg></div></div>
                   <div class="list-row"><div class="thumb"><svg><use href="#i-play"/></svg></div><div style="min-width:0;"><div class="list-cat">Asthma</div><div class="list-title">8. Status Asthmaticus [...</div><div class="list-status done">Completed · 1h ago</div></div><div class="list-chev"><svg><use href="#i-chevron-right"/></svg></div></div>
-                  <div class="list-row"><div class="thumb"><svg><use href="#i-play"/></svg></div><div style="min-width:0;"><div class="list-cat">Mycobacterial, Fungal...</div><div class="list-title">12. Antifungals - Amph...</div><div class="list-status done">Completed · 1h ago</div></div><div class="list-chev"><svg><use href="#i-chevron-right"/></svg></div></div>
-                  <div class="list-row"><div class="thumb"><svg><use href="#i-play"/></svg></div><div style="min-width:0;"><div class="list-cat">Mycobacterial, Fungal...</div><div class="list-title">14. Antifungals - Ketoc...</div><div class="list-status done">Completed · 1h ago</div></div><div class="list-chev"><svg><use href="#i-chevron-right"/></svg></div></div>
-                  <div class="list-row"><div class="thumb"><svg><use href="#i-play"/></svg></div><div style="min-width:0;"><div class="list-cat">Mycobacterial, Fungal...</div><div class="list-title">13. Antifungals - Ketoc...</div><div class="list-status done">Completed · 1h ago</div></div><div class="list-chev"><svg><use href="#i-chevron-right"/></svg></div></div>
-                  <div class="list-row"><div class="thumb"><svg><use href="#i-play"/></svg></div><div style="min-width:0;"><div class="list-cat">Mycobacterial, Fungal...</div><div class="list-title">11. Antifungals - Ampho...</div><div class="list-status done">Completed · 1h ago</div></div><div class="list-chev"><svg><use href="#i-chevron-right"/></svg></div></div>
-                  <div class="list-row"><div class="thumb"><svg><use href="#i-play"/></svg></div><div style="min-width:0;"><div class="list-cat">Mycobacterial, Fungal...</div><div class="list-title">10. Antifungals - Amph...</div><div class="list-status done">Completed · 1h ago</div></div><div class="list-chev"><svg><use href="#i-chevron-right"/></svg></div></div>
+                  <div class="list-row"><div class="thumb"><svg><use href="#i-play"/></svg></div><div style="min-width:0;"><div class="list-cat">Mycobacterial, Fungal...</div><div class="list-title">12. Antifungals Amph...</div><div class="list-status done">Completed · 1h ago</div></div><div class="list-chev"><svg><use href="#i-chevron-right"/></svg></div></div>
+                  <div class="list-row"><div class="thumb"><svg><use href="#i-play"/></svg></div><div style="min-width:0;"><div class="list-cat">Mycobacterial, Fungal...</div><div class="list-title">14. Antifungals Ketoc...</div><div class="list-status done">Completed · 1h ago</div></div><div class="list-chev"><svg><use href="#i-chevron-right"/></svg></div></div>
+                  <div class="list-row"><div class="thumb"><svg><use href="#i-play"/></svg></div><div style="min-width:0;"><div class="list-cat">Mycobacterial, Fungal...</div><div class="list-title">13. Antifungals Ketoc...</div><div class="list-status done">Completed · 1h ago</div></div><div class="list-chev"><svg><use href="#i-chevron-right"/></svg></div></div>
+                  <div class="list-row"><div class="thumb"><svg><use href="#i-play"/></svg></div><div style="min-width:0;"><div class="list-cat">Mycobacterial, Fungal...</div><div class="list-title">11. Antifungals Ampho...</div><div class="list-status done">Completed · 1h ago</div></div><div class="list-chev"><svg><use href="#i-chevron-right"/></svg></div></div>
+                  <div class="list-row"><div class="thumb"><svg><use href="#i-play"/></svg></div><div style="min-width:0;"><div class="list-cat">Mycobacterial, Fungal...</div><div class="list-title">10. Antifungals Amph...</div><div class="list-status done">Completed · 1h ago</div></div><div class="list-chev"><svg><use href="#i-chevron-right"/></svg></div></div>
                 </div>
               </div>
 
@@ -1572,7 +1638,7 @@
                   <div class="switch on" data-switch tabindex="0" role="switch" aria-checked="true"></div>
                 </div>
                 <div class="toggle-item">
-                  <div><div class="toggle-item-title">Renewal reminders</div><div class="toggle-item-sub">A heads-up a few days before any plan you own is about to lapse.</div></div>
+                  <div><div class="toggle-item-title">Renewal reminders</div><div class="toggle-item-sub">A reminder a few days before any plan you own is about to lapse.</div></div>
                   <div class="switch on" data-switch tabindex="0" role="switch" aria-checked="true"></div>
                 </div>
                 <div class="toggle-item">
@@ -1580,10 +1646,10 @@
                   <div class="switch on" data-switch tabindex="0" role="switch" aria-checked="true"></div>
                 </div>
                 <div class="toggle-item">
-                  <div><div class="toggle-item-title">Weekly digest</div><div class="toggle-item-sub">A short Monday-morning email summarising what you studied last week.</div></div>
+                  <div><div class="toggle-item-title">Weekly digest</div><div class="toggle-item-sub">A short Monday morning email summarising what you studied last week.</div></div>
                   <div class="switch" data-switch tabindex="0" role="switch" aria-checked="false"></div>
                 </div>
-                <p class="legal-footnote">Transactional emails (password reset, email verification, receipts) always send — those aren't marketing and aren't covered by the toggles above.</p>
+                <p class="legal-footnote">Transactional emails (password reset, email verification, receipts) always send. Those aren't marketing and aren't covered by the toggles above.</p>
               </div>
 
               <!-- SETTINGS > Privacy -->
@@ -1597,9 +1663,9 @@
                 <div class="legal-updated">Last updated · June 2026</div>
                 <p class="legal-p">nclips.ai is a study platform for nursing students. To run it we collect the minimum data we need to keep your account, your progress, and your subscription working. We don't sell your data. We don't share it with advertisers. The rest of this page is the detail.</p>
                 <div class="legal-h"><span class="n">01</span><h4>What we collect</h4></div>
-                <p class="legal-p">When you create an account we store your name, email, and a one-way hash of your password (we can't read the password itself). If you sign in with Google we store your Google account ID and the email Google gives us — nothing else.</p>
-                <p class="legal-p">While you study, we record which videos you watched, how far through each one you got, what you bookmarked, and any chapter-level progress. None of this is shared with anyone outside the platform.</p>
-                <p class="legal-p">When you subscribe to a course, Stripe handles your card details on their own servers — we never see or store your full card number.</p>
+                <p class="legal-p">When you create an account we store your name, email, and a one way hash of your password (we can't read the password itself). If you sign in with Google we store your Google account ID and the email Google gives us. Nothing else.</p>
+                <p class="legal-p">While you study, we record which videos you watched, how far through each one you got, what you bookmarked, and any chapter progress. None of this is shared with anyone outside the platform.</p>
+                <p class="legal-p">When you subscribe to a course, Stripe handles your card details on their own servers. We never see or store your full card number.</p>
               </div>
 
               <!-- SETTINGS > Refund policy -->
@@ -1613,11 +1679,11 @@
                 <div class="legal-updated">Last updated · July 6, 2026</div>
                 <p class="legal-p">This Refund Policy applies to all purchases made within the <strong>NCLIPS</strong> mobile application (&ldquo;App&rdquo;), operated by <strong>ProntoTech AI Solutions Inc.</strong> (&ldquo;we,&rdquo; &ldquo;us,&rdquo; &ldquo;our&rdquo;). By purchasing any subscription, course, content package, or other digital product through the App, you agree to this Refund Policy.</p>
 
-                <div class="legal-h"><span class="n">01</span><h4>No-Refund Policy</h4></div>
-                <p class="legal-p">All purchases made through the App are <strong>final and non-refundable</strong>. We do not provide refunds, credits, or exchanges for:</p>
+                <div class="legal-h"><span class="n">01</span><h4>No Refund Policy</h4></div>
+                <p class="legal-p">All purchases made through the App are <strong>final and non refundable</strong>. We do not provide refunds, credits, or exchanges for:</p>
                 <ul class="legal-list">
                   <li>Subscription fees (monthly, quarterly, annual, or any other billing period), whether partially or fully used;</li>
-                  <li>One-time purchases of digital content, courses, videos, question banks, or study materials;</li>
+                  <li>One time purchases of digital content, courses, videos, question banks, or study materials;</li>
                   <li>Unused portions of a subscription period after cancellation;</li>
                   <li>Dissatisfaction with content, features, difficulty level, or learning outcomes;</li>
                   <li>Failure to use the App or access purchased content during the subscription period;</li>
@@ -1625,7 +1691,7 @@
                   <li>Changes to content, features, or pricing made after your purchase;</li>
                   <li>Technical issues arising from your device, operating system, or internet connection.</li>
                 </ul>
-                <p class="legal-p">Purchasing a subscription or digital content grants you a limited, non-transferable license to access that content for the applicable period. It does not constitute ownership of the content.</p>
+                <p class="legal-p">Purchasing a subscription or digital content grants you a limited, non transferable license to access that content for the applicable period. It does not constitute ownership of the content.</p>
 
                 <div class="legal-h"><span class="n">02</span><h4>Subscription Cancellation</h4></div>
                 <p class="legal-p">You may cancel your subscription at any time. Cancellation stops <strong>future</strong> billing but does not entitle you to a refund for the current billing period. You will retain access to paid content until the end of the period you have already paid for.</p>
@@ -1662,7 +1728,7 @@
 
             <!-- ============ PHONE (real app) ============ -->
             <div class="device-slot" data-device="phone" data-role="front" id="showcase">
-              <span class="device-badge">the app — mobile</span>
+              <span class="device-badge">the app mobile</span>
               <span class="device-ring"></span>
               <span class="device-tap-hint"><svg><use href="#i-play"/></svg></span>
               <span class="cursor-demo"><span class="click-ripple"></span><svg><use href="#i-cursor"/></svg></span>
@@ -1686,8 +1752,8 @@
                   <div class="hero-card-top">
                     <div class="hero-card-greet">Good morning, Saya 👋</div>
                   </div>
-                  <h2>Ready to ace the NCLEX-RN?</h2>
-                  <p>Pick a chapter and start studying — your progress will land here.</p>
+                  <h2>Ready to ace the NCLEX RN?</h2>
+                  <p>Pick a chapter and start studying. Your progress will land here.</p>
                   <span class="hero-card-btn" data-goto="courses"><svg><use href="#i-play"/></svg>Browse chapters</span>
                   <div class="hero-nurses">
                     <svg viewBox="0 0 90 70" fill="none">
@@ -1725,7 +1791,7 @@
               <!-- COURSES -->
               <div class="app-screen" data-screen="courses">
                 <div class="app-h1">Choose your program</div>
-                <div class="app-sub">Pick a track to start your NCLEX journey. Each program is a full curriculum, broken into bite-sized chapters.</div>
+                <div class="app-sub">Pick a track to start your NCLEX journey. Each program is a full curriculum, broken into quick chapters.</div>
                 <div class="search-row">
                   <div class="search-input"><svg><use href="#i-search"/></svg>Search programs</div>
                   <div class="filter-pill">All programs<svg><use href="#i-chevron"/></svg></div>
@@ -1737,18 +1803,18 @@
 
                 <div class="course-card">
                   <div class="course-banner medsurg">
-                    <div class="course-banner-title">MED-SURG<span>FOR NCLEX® SUCCESS</span></div>
+                    <div class="course-banner-title">MED SURG<span>FOR NCLEX® SUCCESS</span></div>
                     <div class="course-banner-tag">Think like a Nurse. Care like a Pro.</div>
                     <div class="course-banner-feats">
-                      <div class="course-feat"><svg><use href="#i-book"/></svg>HIGH-YIELD CONTENT</div>
+                      <div class="course-feat"><svg><use href="#i-book"/></svg>HIGH YIELD CONTENT</div>
                       <div class="course-feat"><svg><use href="#i-target"/></svg>NCLEX FOCUSED</div>
                       <div class="course-feat"><svg><use href="#i-heart"/></svg>PATIENT CARE CENTERED</div>
                     </div>
                     <div class="course-banner-badge"><svg><use href="#i-cap"/></svg>LEARN · APPLY · EXCEL</div>
                   </div>
                   <div class="course-body">
-                    <h3>Medical-Surgical Nursing</h3>
-                    <p>The core body-systems curriculum — cardio, respiratory, neuro, endocrine, renal, pharmacology.</p>
+                    <h3>Medical Surgical Nursing</h3>
+                    <p>The core body systems curriculum: cardio, respiratory, neuro, endocrine, renal, pharmacology.</p>
                     <div class="course-meta-row">
                       <span><svg><use href="#i-book"/></svg>145 chapters</span>
                       <span><svg><use href="#i-clock"/></svg>48h</span>
@@ -1774,7 +1840,7 @@
                   </div>
                   <div class="course-body">
                     <h3>Pharmacology</h3>
-                    <p>Drug classes, mechanisms, side effects, interactions, and high-yield NCLEX pharm questions.</p>
+                    <p>Drug classes, mechanisms, side effects, interactions, and high yield NCLEX pharm questions.</p>
                     <div class="course-meta-row">
                       <span><svg><use href="#i-clock"/></svg>22h</span>
                     </div>
@@ -1790,11 +1856,11 @@
               <!-- EXAM -->
               <div class="app-screen" data-screen="exam">
                 <div class="app-h1">Exams</div>
-                <div class="app-sub">Practice and simulate NCLEX-style questions.</div>
+                <div class="app-sub">Practice and simulate NCLEX style questions.</div>
                 <div class="exam-card">
                   <span class="soon-badge">COMING SOON</span>
                   <h3>The exam engine is on the way.</h3>
-                  <p>We're building this carefully. Keep studying chapters in the meantime — your progress will carry over the moment exams open.</p>
+                  <p>We're building this carefully. Keep studying chapters in the meantime. Your progress will carry over the moment exams open.</p>
                   <span class="course-cta" data-goto="courses" style="display:inline-flex;width:auto;"><svg><use href="#i-arrow"/></svg>Back to chapters</span>
                 </div>
               </div>
@@ -1869,12 +1935,12 @@
                   <div class="app-topbar-title">Billing &amp; subscription</div>
                 </div>
                 <span class="app-eyebrow">CURRENT PLAN</span>
-                <div class="app-h1" style="margin-top:6px;font-size:19px;">Medical-Surgical Nursing</div>
+                <div class="app-h1" style="margin-top:6px;font-size:19px;">Medical Surgical Nursing</div>
                 <div class="course-footer" style="border:1px solid var(--app-line);border-radius:14px;padding:14px;margin-top:12px;background:var(--app-card);">
                   <span class="annual-badge">ANNUAL</span>
                   <span class="renews">Renews <strong>4 Jul 2027</strong></span>
                 </div>
-                <p class="legal-p" style="margin-top:16px;">Manage or cancel from your device's subscription settings — purchases are handled by Apple or Google, not directly by NCLIPS.</p>
+                <p class="legal-p" style="margin-top:16px;">Manage or cancel from your device's subscription settings. Purchases are handled by Apple or Google, not directly by NCLIPS.</p>
                 <div class="settings-row" data-goto="settings-refund" data-push style="margin-top:6px;">
                   <div class="settings-icon"><svg><use href="#i-card"/></svg></div>
                   <div><div class="settings-row-title">Refund policy</div><div class="settings-row-sub">How refunds and cancellations work</div></div>
@@ -1914,11 +1980,11 @@
                 <div style="margin-top:14px;">
                   <div class="list-row"><div class="thumb"><svg><use href="#i-play"/></svg></div><div style="min-width:0;"><div class="list-cat">Asthma</div><div class="list-title">6. Status Asthmaticus [...</div><div class="list-status">0% watched · 1h ago</div></div><div class="list-chev"><svg><use href="#i-chevron-right"/></svg></div></div>
                   <div class="list-row"><div class="thumb"><svg><use href="#i-play"/></svg></div><div style="min-width:0;"><div class="list-cat">Asthma</div><div class="list-title">8. Status Asthmaticus [...</div><div class="list-status done">Completed · 1h ago</div></div><div class="list-chev"><svg><use href="#i-chevron-right"/></svg></div></div>
-                  <div class="list-row"><div class="thumb"><svg><use href="#i-play"/></svg></div><div style="min-width:0;"><div class="list-cat">Mycobacterial, Fungal...</div><div class="list-title">12. Antifungals - Amph...</div><div class="list-status done">Completed · 1h ago</div></div><div class="list-chev"><svg><use href="#i-chevron-right"/></svg></div></div>
-                  <div class="list-row"><div class="thumb"><svg><use href="#i-play"/></svg></div><div style="min-width:0;"><div class="list-cat">Mycobacterial, Fungal...</div><div class="list-title">14. Antifungals - Ketoc...</div><div class="list-status done">Completed · 1h ago</div></div><div class="list-chev"><svg><use href="#i-chevron-right"/></svg></div></div>
-                  <div class="list-row"><div class="thumb"><svg><use href="#i-play"/></svg></div><div style="min-width:0;"><div class="list-cat">Mycobacterial, Fungal...</div><div class="list-title">13. Antifungals - Ketoc...</div><div class="list-status done">Completed · 1h ago</div></div><div class="list-chev"><svg><use href="#i-chevron-right"/></svg></div></div>
-                  <div class="list-row"><div class="thumb"><svg><use href="#i-play"/></svg></div><div style="min-width:0;"><div class="list-cat">Mycobacterial, Fungal...</div><div class="list-title">11. Antifungals - Ampho...</div><div class="list-status done">Completed · 1h ago</div></div><div class="list-chev"><svg><use href="#i-chevron-right"/></svg></div></div>
-                  <div class="list-row"><div class="thumb"><svg><use href="#i-play"/></svg></div><div style="min-width:0;"><div class="list-cat">Mycobacterial, Fungal...</div><div class="list-title">10. Antifungals - Amph...</div><div class="list-status done">Completed · 1h ago</div></div><div class="list-chev"><svg><use href="#i-chevron-right"/></svg></div></div>
+                  <div class="list-row"><div class="thumb"><svg><use href="#i-play"/></svg></div><div style="min-width:0;"><div class="list-cat">Mycobacterial, Fungal...</div><div class="list-title">12. Antifungals Amph...</div><div class="list-status done">Completed · 1h ago</div></div><div class="list-chev"><svg><use href="#i-chevron-right"/></svg></div></div>
+                  <div class="list-row"><div class="thumb"><svg><use href="#i-play"/></svg></div><div style="min-width:0;"><div class="list-cat">Mycobacterial, Fungal...</div><div class="list-title">14. Antifungals Ketoc...</div><div class="list-status done">Completed · 1h ago</div></div><div class="list-chev"><svg><use href="#i-chevron-right"/></svg></div></div>
+                  <div class="list-row"><div class="thumb"><svg><use href="#i-play"/></svg></div><div style="min-width:0;"><div class="list-cat">Mycobacterial, Fungal...</div><div class="list-title">13. Antifungals Ketoc...</div><div class="list-status done">Completed · 1h ago</div></div><div class="list-chev"><svg><use href="#i-chevron-right"/></svg></div></div>
+                  <div class="list-row"><div class="thumb"><svg><use href="#i-play"/></svg></div><div style="min-width:0;"><div class="list-cat">Mycobacterial, Fungal...</div><div class="list-title">11. Antifungals Ampho...</div><div class="list-status done">Completed · 1h ago</div></div><div class="list-chev"><svg><use href="#i-chevron-right"/></svg></div></div>
+                  <div class="list-row"><div class="thumb"><svg><use href="#i-play"/></svg></div><div style="min-width:0;"><div class="list-cat">Mycobacterial, Fungal...</div><div class="list-title">10. Antifungals Amph...</div><div class="list-status done">Completed · 1h ago</div></div><div class="list-chev"><svg><use href="#i-chevron-right"/></svg></div></div>
                 </div>
               </div>
 
@@ -1936,7 +2002,7 @@
                   <div class="switch on" data-switch tabindex="0" role="switch" aria-checked="true"></div>
                 </div>
                 <div class="toggle-item">
-                  <div><div class="toggle-item-title">Renewal reminders</div><div class="toggle-item-sub">A heads-up a few days before any plan you own is about to lapse.</div></div>
+                  <div><div class="toggle-item-title">Renewal reminders</div><div class="toggle-item-sub">A reminder a few days before any plan you own is about to lapse.</div></div>
                   <div class="switch on" data-switch tabindex="0" role="switch" aria-checked="true"></div>
                 </div>
                 <div class="toggle-item">
@@ -1944,10 +2010,10 @@
                   <div class="switch on" data-switch tabindex="0" role="switch" aria-checked="true"></div>
                 </div>
                 <div class="toggle-item">
-                  <div><div class="toggle-item-title">Weekly digest</div><div class="toggle-item-sub">A short Monday-morning email summarising what you studied last week.</div></div>
+                  <div><div class="toggle-item-title">Weekly digest</div><div class="toggle-item-sub">A short Monday morning email summarising what you studied last week.</div></div>
                   <div class="switch" data-switch tabindex="0" role="switch" aria-checked="false"></div>
                 </div>
-                <p class="legal-footnote">Transactional emails (password reset, email verification, receipts) always send — those aren't marketing and aren't covered by the toggles above.</p>
+                <p class="legal-footnote">Transactional emails (password reset, email verification, receipts) always send. Those aren't marketing and aren't covered by the toggles above.</p>
               </div>
 
               <!-- SETTINGS > Privacy -->
@@ -1961,9 +2027,9 @@
                 <div class="legal-updated">Last updated · June 2026</div>
                 <p class="legal-p">nclips.ai is a study platform for nursing students. To run it we collect the minimum data we need to keep your account, your progress, and your subscription working. We don't sell your data. We don't share it with advertisers. The rest of this page is the detail.</p>
                 <div class="legal-h"><span class="n">01</span><h4>What we collect</h4></div>
-                <p class="legal-p">When you create an account we store your name, email, and a one-way hash of your password (we can't read the password itself). If you sign in with Google we store your Google account ID and the email Google gives us — nothing else.</p>
-                <p class="legal-p">While you study, we record which videos you watched, how far through each one you got, what you bookmarked, and any chapter-level progress. None of this is shared with anyone outside the platform.</p>
-                <p class="legal-p">When you subscribe to a course, Stripe handles your card details on their own servers — we never see or store your full card number.</p>
+                <p class="legal-p">When you create an account we store your name, email, and a one way hash of your password (we can't read the password itself). If you sign in with Google we store your Google account ID and the email Google gives us. Nothing else.</p>
+                <p class="legal-p">While you study, we record which videos you watched, how far through each one you got, what you bookmarked, and any chapter progress. None of this is shared with anyone outside the platform.</p>
+                <p class="legal-p">When you subscribe to a course, Stripe handles your card details on their own servers. We never see or store your full card number.</p>
               </div>
 
               <!-- SETTINGS > Refund policy -->
@@ -1977,11 +2043,11 @@
                 <div class="legal-updated">Last updated · July 6, 2026</div>
                 <p class="legal-p">This Refund Policy applies to all purchases made within the <strong>NCLIPS</strong> mobile application (&ldquo;App&rdquo;), operated by <strong>ProntoTech AI Solutions Inc.</strong> (&ldquo;we,&rdquo; &ldquo;us,&rdquo; &ldquo;our&rdquo;). By purchasing any subscription, course, content package, or other digital product through the App, you agree to this Refund Policy.</p>
 
-                <div class="legal-h"><span class="n">01</span><h4>No-Refund Policy</h4></div>
-                <p class="legal-p">All purchases made through the App are <strong>final and non-refundable</strong>. We do not provide refunds, credits, or exchanges for:</p>
+                <div class="legal-h"><span class="n">01</span><h4>No Refund Policy</h4></div>
+                <p class="legal-p">All purchases made through the App are <strong>final and non refundable</strong>. We do not provide refunds, credits, or exchanges for:</p>
                 <ul class="legal-list">
                   <li>Subscription fees (monthly, quarterly, annual, or any other billing period), whether partially or fully used;</li>
-                  <li>One-time purchases of digital content, courses, videos, question banks, or study materials;</li>
+                  <li>One time purchases of digital content, courses, videos, question banks, or study materials;</li>
                   <li>Unused portions of a subscription period after cancellation;</li>
                   <li>Dissatisfaction with content, features, difficulty level, or learning outcomes;</li>
                   <li>Failure to use the App or access purchased content during the subscription period;</li>
@@ -1989,7 +2055,7 @@
                   <li>Changes to content, features, or pricing made after your purchase;</li>
                   <li>Technical issues arising from your device, operating system, or internet connection.</li>
                 </ul>
-                <p class="legal-p">Purchasing a subscription or digital content grants you a limited, non-transferable license to access that content for the applicable period. It does not constitute ownership of the content.</p>
+                <p class="legal-p">Purchasing a subscription or digital content grants you a limited, non transferable license to access that content for the applicable period. It does not constitute ownership of the content.</p>
 
                 <div class="legal-h"><span class="n">02</span><h4>Subscription Cancellation</h4></div>
                 <p class="legal-p">You may cancel your subscription at any time. Cancellation stops <strong>future</strong> billing but does not entitle you to a refund for the current billing period. You will retain access to paid content until the end of the period you have already paid for.</p>
@@ -2027,7 +2093,7 @@
         </div>
         </div>
 
-        <p class="sr-only">Laptop, tablet, and mobile previews of the NCLIPS.AI product. Hover or tap a device to bring it forward and explore its screens — this is a static demo and doesn't connect to an account or save data.</p>
+        <p class="sr-only">Laptop, tablet, and mobile previews of the NCLIPS.AI product. Hover or tap a device to bring it forward and explore its screens. This is a static demo and doesn't connect to an account or save data.</p>
       </div>
     </div>
   </section>
@@ -2045,15 +2111,15 @@
     <div class="wrap">
       <div class="problem-head" data-reveal>
         <span class="eyebrow"><span class="dot"></span>The old way</span>
-        <h2>Textbooks and hour-long lectures weren't built for a ten-minute break.</h2>
-        <p class="lede" style="margin-top:14px;">If you keep opening a 40-page chapter and closing it five minutes later, the problem isn't your discipline — it's that nothing was sized for how you actually study.</p>
+        <h2>Textbooks and hour long lectures weren't built for a ten minute break.</h2>
+        <p class="lede" style="margin-top:14px;">If you keep opening a 40 page chapter and closing it five minutes later, the problem isn't your discipline. It's that nothing was sized for how you actually study.</p>
       </div>
       <div class="compare" data-reveal-group>
         <div class="compare-card compare-card--old" data-reveal style="--i:0">
           <h3>Textbooks &amp; long lectures<span class="compare-tag">OLD WAY</span></h3>
           <ul class="compare-list">
             <li><svg><use href="#i-x"/></svg>Hundreds of pages with no sense of what's actually tested</li>
-            <li><svg><use href="#i-x"/></svg>Hour-long lecture videos when you've got ten minutes</li>
+            <li><svg><use href="#i-x"/></svg>Hour long lecture videos when you've got ten minutes</li>
             <li><svg><use href="#i-x"/></svg>Close the tab and lose your place completely</li>
             <li><svg><use href="#i-x"/></svg>No record of what you've actually finished</li>
           </ul>
@@ -2082,27 +2148,43 @@
     <div class="wrap">
       <div class="features-head" data-reveal>
         <span class="eyebrow"><span class="dot"></span>What you get</span>
-        <h2>Three things that make studying stick.</h2>
+        <h2>Everything you need to study smarter.</h2>
       </div>
-      <div class="feature-grid" data-reveal-group>
-        <div class="feature-card" data-reveal style="--i:0">
-          <div class="feature-icon"><svg><use href="#i-book"/></svg></div>
-          <span class="feature-tag">CHAPTER LIBRARY</span>
-          <h3>Master the NCLEX, one focused lesson at a time.</h3>
-          <p>150+ structured chapters covering every major topic, broken into quick, high-impact lessons that keep you learning without the overwhelm.</p>
-        </div>
-        <div class="feature-card" data-reveal style="--i:1">
-          <div class="feature-icon"><svg><use href="#i-history"/></svg></div>
-          <span class="feature-tag">RESUME ANYWHERE</span>
-          <h3>Pick up right where you left off</h3>
-          <p>Every lesson remembers your progress down to the second. Close the app mid-chapter and it's exactly as you left it next time.</p>
-        </div>
-        <div class="feature-card" data-reveal style="--i:2">
-          <div class="feature-icon"><svg><use href="#i-bookmark"/></svg></div>
-          <span class="feature-tag">BOOKMARKS</span>
-          <h3>Save it, revisit it later</h3>
-          <p>Bookmark any video the moment it matters. It's waiting in one tap — perfect for a last look before clinicals.</p>
-        </div>
+      <div class="campaign-grid" data-reveal-group>
+        <article class="campaign-panel campaign-ai" data-reveal style="--i:0">
+          <h3>Your AI tutor, on tap.</h3>
+          <p>Ask anything about pathophysiology, dosage calculations, rationales, or NCLEX questions and get clear exam aligned answers in seconds.</p>
+          <div class="campaign-chat-icon"><svg><use href="#i-chat"/></svg></div>
+          <div class="campaign-doodles" aria-hidden="true"></div>
+          <div class="campaign-bubbles" aria-hidden="true">
+            <div class="campaign-bubble ask">What's the MOA of beta blockers?</div>
+            <div class="campaign-bubble answer">Beta blockers competitively bind beta adrenergic receptors, reducing heart rate and contractility.</div>
+          </div>
+        </article>
+        <article class="campaign-panel campaign-practice" data-reveal style="--i:1">
+          <h3>Practice that sticks.</h3>
+          <p>Adaptive NCLEX style questions target weak spots, explain rationales, and help you learn what to review next.</p>
+          <div class="practice-stack" aria-hidden="true">
+            <div class="practice-card question"><strong>QUESTION 14 OF 30</strong>A nurse is monitoring a client receiving IV heparin. Which lab is most important to review?<br><br>A. INR<br>B. aPTT<br>C. Platelets</div>
+            <div class="practice-card rationale"><strong>AI RATIONALE</strong>aPTT monitors heparin's effect on the intrinsic pathway.</div>
+            <div class="practice-card mastery"><strong>MASTERY</strong>78% on cardio meds<div class="mastery-bar"><span></span></div></div>
+          </div>
+        </article>
+        <article class="campaign-panel campaign-loop" data-reveal style="--i:2">
+          <h3>Stay in the loop.</h3>
+          <p>Smart nudges keep your study streak alive and your progress moving without the noise.</p>
+          <div class="loop-list">
+            <div class="loop-item"><div class="loop-icon good"><svg><use href="#i-check"/></svg></div><div><b>Chapter complete!</b><span>You wrapped up Pharmacology: Antibiotics.</span></div></div>
+            <div class="loop-item"><div class="loop-icon fire"><svg><use href="#i-flame"/></svg></div><div><b>Study streak +1</b><span>6 days strong. Keep the fire going.</span></div></div>
+            <div class="loop-item"><div class="loop-icon ai"><svg><use href="#i-star"/></svg></div><div><b>New AI summary</b><span>Cardiac rhythms recapped in 2 min.</span></div></div>
+            <div class="loop-item"><div class="loop-icon bell"><svg><use href="#i-bell"/></svg></div><div><b>Practice reminder</b><span>12 NCLEX style questions queued for today.</span></div></div>
+          </div>
+        </article>
+        <article class="campaign-panel campaign-cta" data-reveal style="--i:3">
+          <h3>Ready to ace it?</h3>
+          <p>Sign up free and study smarter from today.</p>
+          <a class="btn btn--primary" href="https://dashboard.nclips.ai/login">Get Started For Free <svg><use href="#i-arrow"/></svg></a>
+        </article>
       </div>
     </div>
   </section>
@@ -2114,9 +2196,9 @@
         <div class="dd-copy">
           <span class="eyebrow"><span class="dot"></span>Chapter Library</span>
           <h3>The whole curriculum, already broken into chapters.</h3>
-          <p>Open Medical-Surgical Nursing and you're not staring at a syllabus — you're looking at 145 numbered chapters, each one short enough to actually finish in a sitting.</p>
+          <p>Open Medical Surgical Nursing and you're not staring at a syllabus. You're looking at 145 numbered chapters, each one short enough to actually finish in a sitting.</p>
           <ul>
-            <li><svg><use href="#i-check"/></svg>Organized by course — Med-Surg, Pharmacology, and more</li>
+            <li><svg><use href="#i-check"/></svg>Organized by course: Med Surg, Pharmacology, and more</li>
             <li><svg><use href="#i-check"/></svg>Search or filter down to just the courses you own</li>
             <li><svg><use href="#i-check"/></svg>New chapters ship in without losing your place</li>
           </ul>
@@ -2129,12 +2211,12 @@
               <div class="app-sub">Pick a track to start your NCLEX journey.</div>
               <div class="course-card" style="margin-top:16px;">
                 <div class="course-banner medsurg">
-                  <div class="course-banner-title">MED-SURG<span>FOR NCLEX&reg; SUCCESS</span></div>
+                  <div class="course-banner-title">MED SURG<span>FOR NCLEX&reg; SUCCESS</span></div>
                   <div class="course-banner-tag">Think like a Nurse. Care like a Pro.</div>
                   <div class="course-banner-badge"><svg><use href="#i-cap"/></svg>LEARN &middot; APPLY &middot; EXCEL</div>
                 </div>
                 <div class="course-body">
-                  <h3>Medical-Surgical Nursing</h3>
+                  <h3>Medical Surgical Nursing</h3>
                   <p>Cardio, respiratory, neuro, endocrine, renal, pharmacology.</p>
                   <div class="course-meta-row">
                     <span><svg><use href="#i-book"/></svg>145 chapters</span>
@@ -2151,12 +2233,12 @@
       <div class="dd-row rev" data-reveal>
         <div class="dd-copy">
           <span class="eyebrow"><span class="dot"></span>Resume Anywhere</span>
-          <h3>Close the app mid-lesson. Open it later at the exact same second.</h3>
-          <p>The home screen always shows the chapter you were on, how far through it you got, and one tap to keep going — no hunting through a syllabus to find your spot.</p>
+          <h3>Close the app mid lesson. Open it later at the exact same second.</h3>
+          <p>The home screen always shows the chapter you were on, how far through it you got, and one tap to keep going. No hunting through a syllabus to find your spot.</p>
           <ul>
             <li><svg><use href="#i-check"/></svg>Progress ring shows exactly how much is left</li>
             <li><svg><use href="#i-check"/></svg>Picks the video back up at the same timestamp</li>
-            <li><svg><use href="#i-check"/></svg>Works the same after a five-minute break or a five-day one</li>
+            <li><svg><use href="#i-check"/></svg>Works the same after a five minute break or a five day one</li>
           </ul>
         </div>
         <div class="dd-visual">
@@ -2188,9 +2270,9 @@
         <div class="dd-copy">
           <span class="eyebrow"><span class="dot"></span>Bookmarks &amp; History</span>
           <h3>Save what matters. Find it again in one tap.</h3>
-          <p>Tap the bookmark on any video and it lands in Saved — perfect for the one explanation you'll want again right before clinicals. Watch history keeps a running log of everything you've finished.</p>
+          <p>Tap the bookmark on any video and it lands in Saved, perfect for the one explanation you'll want again right before clinicals. Watch history keeps a running log of everything you've finished.</p>
           <ul>
-            <li><svg><use href="#i-check"/></svg>Bookmark mid-video, no need to finish first</li>
+            <li><svg><use href="#i-check"/></svg>Bookmark mid video, no need to finish first</li>
             <li><svg><use href="#i-check"/></svg>Full watch history, organized by chapter</li>
             <li><svg><use href="#i-check"/></svg>See what's completed vs. still in progress</li>
           </ul>
@@ -2213,7 +2295,7 @@
                 <div class="thumb"><svg><use href="#i-play"/></svg></div>
                 <div style="min-width:0;">
                   <div class="list-cat">Mycobacterial, Fungal...</div>
-                  <div class="list-title">12. Antifungals - Amph...</div>
+                  <div class="list-title">12. Antifungals Amph...</div>
                   <div class="list-status done">Completed &middot; 1h ago</div>
                 </div>
               </div>
@@ -2249,12 +2331,12 @@
         <div class="how-step" data-reveal style="--i:1">
           <span class="num">02</span>
           <h4>Watch a chapter, most days</h4>
-          <p>Short videos you can actually finish on a break — pause, resume, bookmark what matters.</p>
+          <p>Short videos you can actually finish on a break. Pause, resume, bookmark what matters.</p>
         </div>
         <div class="how-step" data-reveal style="--i:2">
           <span class="num">03</span>
           <h4>Walk in already covered</h4>
-          <p>By test day you've been through the material yourself, chapter by chapter — not cramming the night before.</p>
+          <p>By test day you've been through the material yourself, chapter by chapter, not cramming the night before.</p>
         </div>
       </div>
     </div>
@@ -2270,21 +2352,35 @@
       <div class="t-grid" data-reveal-group>
         <div class="t-card" data-reveal style="--i:0">
           <div class="t-stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
-          <p class="t-quote">“I stopped just guessing why an answer was right. Now I can explain it back — which is exactly what the exam is actually testing.”</p>
-          <div class="t-person"><div class="t-avatar">M</div><div><div class="name">Maria T.</div><div class="role">BSN student</div></div></div>
-        </div>
-        <div class="t-card" data-reveal style="--i:1">
-          <div class="t-stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
-          <p class="t-quote">“Fifteen minutes on a lunch break, most days. That consistency mattered more to me than any single study weekend ever did.”</p>
-          <div class="t-person"><div class="t-avatar">J</div><div><div class="name">Josh R.</div><div class="role">Repeat test-taker</div></div></div>
+          <p class="t-quote">"The 24/7 tutor saved me so many late nights. I get instant rationales that actually make sense for the NCLEX."</p>
+          <div class="t-person"><div class="t-avatar"><img src="testimonial-assets/james-w.png" alt="Mary Patricia"></div><div><div class="name">Mary Patricia</div><div class="role">RN Student</div></div></div>
         </div>
         <div class="t-card" data-reveal style="--i:2">
           <div class="t-stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
-          <p class="t-quote">“Being able to ask ‘why not the other answer’ instead of just reading a rationale changed how I study completely.”</p>
-          <div class="t-person"><div class="t-avatar">A</div><div><div class="name">Aling P.</div><div class="role">Accelerated BSN</div></div></div>
+          <p class="t-quote">"Studied two hours a day for a month and walked into the NCLEX feeling actually ready. First time pass!"</p>
+          <div class="t-person"><div class="t-avatar"><img src="testimonial-assets/rachel-m.png" alt="Eleanor Jane"></div><div><div class="name">Eleanor Jane</div><div class="role">New Grad RN</div></div></div>
+        </div>
+        <div class="t-card" data-reveal style="--i:3">
+          <div class="t-stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <p class="t-quote">"Honestly the only app that explains pharmacology in a way that sticks. The diagrams are everything."</p>
+          <div class="t-person"><div class="t-avatar"><img src="testimonial-assets/michael-d.png" alt="Linda Maria"></div><div><div class="name">Linda Maria</div><div class="role">BSN Student</div></div></div>
+        </div>
+        <div class="t-card" data-reveal style="--i:4">
+          <div class="t-stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <p class="t-quote">"I love that I can study on the bus, between shifts, anywhere. It feels like having a tutor in my pocket."</p>
+          <div class="t-person"><div class="t-avatar"><img src="testimonial-assets/jessica-l.png" alt="Amelia Grace"></div><div><div class="name">Amelia Grace</div><div class="role">RN Student</div></div></div>
+        </div>
+        <div class="t-card" data-reveal style="--i:5">
+          <div class="t-stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <p class="t-quote">"NCLIPS takes the stress out of studying. The AI explains things the way my instructor never could, visually, and step by step."</p>
+          <div class="t-person"><div class="t-avatar"><img src="testimonial-assets/emily-r.png" alt="Olivia Rose"></div><div><div class="name">Olivia Rose</div><div class="role">BSN Student</div></div></div>
+        </div>
+        <div class="t-card" data-reveal style="--i:6">
+          <div class="t-stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <p class="t-quote">"The app keeps me moving without feeling overwhelmed. I can review, ask questions, and pick up exactly where I stopped."</p>
+          <div class="t-person"><div class="t-avatar"><img src="testimonial-assets/amana-tariq-mansoor.png" alt="Amana Tariq Mansoor"></div><div><div class="name">Amana Tariq Mansoor</div><div class="role">BSN Student</div></div></div>
         </div>
       </div>
-      <p class="t-disclaimer">Illustrative student feedback — swap in verified reviews before publishing.</p>
     </div>
   </section>
 
@@ -2298,16 +2394,16 @@
       <div class="course-price-grid" data-reveal-group>
         <article class="course-price-card" data-reveal style="--i:0">
           <div class="course-price-media">
-            <img src="med-surg-banner.png" alt="Medical-Surgical Nursing NCLEX course preview">
+            <img src="med-surg-banner.png" alt="Medical Surgical Nursing NCLEX course preview">
           </div>
           <div class="course-price-body">
-            <h3>Medical-Surgical Nursing</h3>
-            <p>The largest single section on the NCLEX &mdash; and the foundation of every clinical rotation.</p>
-            <div class="course-price-meta" aria-label="Medical-Surgical Nursing course details">
+            <h3>Medical Surgical Nursing</h3>
+            <p>The largest single section on the NCLEX and the foundation of every clinical rotation.</p>
+            <div class="course-price-meta" aria-label="Medical Surgical Nursing course details">
               <span><svg><use href="#i-book"/></svg>All body systems</span>
               <span><svg><use href="#i-clock"/></svg>48h</span>
             </div>
-            <a class="course-price-btn" href="https://dashboard.nclips.ai/checkout/med-surg" aria-label="Buy Medical-Surgical Nursing as low as 42 dollars per month">
+            <a class="course-price-btn" href="https://dashboard.nclips.ai/checkout/med-surg" aria-label="Buy Medical Surgical Nursing as low as 42 dollars per month">
               Buy now as low as $42/mo <svg><use href="#i-arrow"/></svg>
             </a>
           </div>
@@ -2318,7 +2414,7 @@
           </div>
           <div class="course-price-body">
             <h3>Pharmacology</h3>
-            <p>Stop memorising drug names &mdash; start recognising patterns by class and mechanism.</p>
+            <p>Stop memorising drug names and start recognising patterns by class and mechanism.</p>
             <div class="course-price-meta" aria-label="Pharmacology course details">
               <span><svg><use href="#i-book"/></svg>49 chapters</span>
               <span><svg><use href="#i-clock"/></svg>22h</span>
@@ -2340,24 +2436,24 @@
     </div>
     <div class="faq-list" id="faqList">
       <div class="faq-item open">
-        <button class="faq-q">Is the content actually nurse-reviewed?<svg><use href="#i-plus"/></svg></button>
-        <div class="faq-a"><div class="faq-a-inner"><p>Yes — every chapter is written and checked by registered nurses, organized into full curriculums like Medical-Surgical Nursing and Pharmacology.</p></div></div>
+        <button class="faq-q">Is the content actually nurse reviewed?<svg><use href="#i-plus"/></svg></button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Yes, every chapter is written and checked by registered nurses, organized into full curriculums like Medical Surgical Nursing and Pharmacology.</p></div></div>
       </div>
       <div class="faq-item">
         <button class="faq-q">Does it prepare me for Next Gen NCLEX?<svg><use href="#i-plus"/></svg></button>
-        <div class="faq-a"><div class="faq-a-inner"><p>The chapters cover NGN case scenarios and clinical-judgment topics directly. A dedicated practice-exam engine is in progress — your chapter progress carries over the moment it opens.</p></div></div>
+        <div class="faq-a"><div class="faq-a-inner"><p>The chapters cover NGN case scenarios and clinical judgment topics directly. A dedicated practice exam engine is in progress. Your chapter progress carries over the moment it opens.</p></div></div>
       </div>
       <div class="faq-item">
         <button class="faq-q">Which devices does it work on?<svg><use href="#i-plus"/></svg></button>
-        <div class="faq-a"><div class="faq-a-inner"><p>Phone, tablet, and the web dashboard at dashboard.nclips.ai — your progress stays in sync across all of them.</p></div></div>
+        <div class="faq-a"><div class="faq-a-inner"><p>Phone, tablet, and the web dashboard at dashboard.nclips.ai keep your progress in sync across all of them.</p></div></div>
       </div>
       <div class="faq-item">
         <button class="faq-q">Can I cancel anytime?<svg><use href="#i-plus"/></svg></button>
-        <div class="faq-a"><div class="faq-a-inner"><p>Yes — cancel anytime and you'll keep access through the end of your current billing period. Purchases are processed by Apple or Google, so refunds follow their policies.</p></div></div>
+        <div class="faq-a"><div class="faq-a-inner"><p>Yes, cancel anytime and you'll keep access through the end of your current billing period. Purchases are processed by Apple or Google, so refunds follow their policies.</p></div></div>
       </div>
       <div class="faq-item">
-        <button class="faq-q">Do you support NCLEX-PN as well as RN?<svg><use href="#i-plus"/></svg></button>
-        <div class="faq-a"><div class="faq-a-inner"><p>Yes — courses are organized to support both the NCLEX-RN and NCLEX-PN tracks.</p></div></div>
+        <button class="faq-q">Do you support NCLEX PN as well as RN?<svg><use href="#i-plus"/></svg></button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Yes, courses are organized to support both the NCLEX RN and NCLEX PN tracks.</p></div></div>
       </div>
     </div>
   </section>
@@ -2481,7 +2577,7 @@
   }
 
   /* ---------- Marquee content ---------- */
-  var tags = ['NCLEX-RN','NCLEX-PN','NGN CASE SCENARIOS','MEDICAL-SURGICAL','PHARMACOLOGY','MENTAL HEALTH','FUNDAMENTALS','MATERNAL-NEWBORN','PATIENT EDUCATION','CLINICAL JUDGMENT'];
+  var tags = ['NCLEX RN','NCLEX PN','NGN CASE SCENARIOS','MEDICAL SURGICAL','PHARMACOLOGY','MENTAL HEALTH','FUNDAMENTALS','MATERNAL NEWBORN','PATIENT EDUCATION','CLINICAL JUDGMENT'];
   var track = document.getElementById('marqueeTrack');
   if(track){
     var html = '';
